@@ -6,10 +6,11 @@ fun main() {
     val wage = 30000
     val numberOfInterns = 30
     val wageOfIntern = 20000
-    val wageFund = numberOfStaff*wage
+    val wageFund = numberOfStaff * wage
     val newWageFund = wageFund + numberOfInterns * wageOfIntern
+    val averageWage = newWageFund/(numberOfStaff + numberOfInterns)
 
     println(wageFund)
     println(newWageFund)
-    println(newWageFund/(numberOfStaff + numberOfInterns))
+    println(averageWage)
 }
