@@ -7,7 +7,7 @@ fun main() {
     val sum = 70000
     val rate = 16.7
     val term = 20
-    val result = sum * ((1 + rate/100)).pow(term)
+    val result = sum * ((1 + rate / 100)).pow(term)
 
-    println(println("%.3f".format(result)))
+    println("%.3f".format(result))
 }
