@@ -2,8 +2,10 @@ package lesson_1
 
 fun main() {
 
-    val seconds = 6480
-    val minutes = seconds/60
+    val timeInSeconds = 6480
+    val minutes = timeInSeconds / 60
+    val seconds = timeInSeconds % 60
+    val time = String.format("%d:%02d", minutes, seconds)
 
-    println("$minutes:00")
+    println(time)
 }
