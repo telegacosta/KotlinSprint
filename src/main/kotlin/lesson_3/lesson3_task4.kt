@@ -12,7 +12,7 @@ fun main() {
     step++
     val number = 2
     start = "D$number"
-    final = "D${number+1}"
+    final = "D${number + 1}"
     move = "$start-$final;$step"
 
     println(move)
