@@ -2,7 +2,7 @@ package lesson_4
 
 fun main() {
 
-    val day = 5
+    val day = 2
 
     println("""
         Упражнения для рук: ${day % 2 == 1}
