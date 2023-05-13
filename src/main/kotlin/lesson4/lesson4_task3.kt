@@ -2,18 +2,12 @@ package lesson4
 
 fun main() {
 
-    val weather = "солнечная"
-    val tent = "раскрыт"
+    val IsWeatherGood = true
+    val isTentOpen = true
     val humidity = 20
-    val exceptionSeason  = "зима"
+    val isNotWinterSeason  = false
 
-    val weatherToday = "солнечная"
-    val tentToday = "раскрыт"
-    val humidityToday = 20
-    val seasonToday = "зима"
-
-    println("Благоприятные ли условия сейчас для роста бобовых? ${(weatherToday == weather) 
-            && (tentToday == tent) 
-            && (humidityToday == humidity) 
-            && (seasonToday != exceptionSeason)}")
+    println("Благоприятные ли условия сейчас для роста бобовых? ${
+        IsWeatherGood && isTentOpen && (humidity == 20) && isNotWinterSeason
+    }")
 }
