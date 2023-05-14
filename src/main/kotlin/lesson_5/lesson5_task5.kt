@@ -20,5 +20,5 @@ fun main() {
         println("Вы выиграли утешительный приз!")
     else println("Неудача! Крутите барабан!")
 
-    println("Выигрышные числа: $rightNumber1 $rightNumber2")
+    println("Выигрышные числа: $rightNumber1 и $rightNumber2")
 }
