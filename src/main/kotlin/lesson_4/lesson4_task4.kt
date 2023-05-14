@@ -4,11 +4,17 @@ fun main() {
 
     val day = 5
 
-    println("""
-        Упражнения для рук: ${day % 2 == 1}
-        Упражнения для ног: ${day % 2 == 0}
-        Упражнения для спины: ${day % 2 == 0}
-        Упражнения для пресса: ${day % 2 == 1}
-    """.trimIndent())
+    val armExercise = "Упражнения для рук"
+    val legExercise = "Упражнения для ног"
+    val backExercise = "Упражнения для спины"
+    val absExercise = "Упражнения для пресса"
 
+    val IsTrainingToday = day % 2 == 1
+
+    println("""
+        $armExercise: $IsTrainingToday
+        $legExercise: ${!IsTrainingToday}
+        $backExercise: ${!IsTrainingToday}
+        $absExercise: $IsTrainingToday
+    """.trimIndent())
 }
