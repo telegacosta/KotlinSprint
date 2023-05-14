@@ -2,17 +2,23 @@ package lesson_4
 
 fun main() {
 
+    val minNumberOfCrew = 55 // минимальная численность экипажа
+    val maxNumberOfCrew = 70 // максимальная численность экипажа
+    val minNumberOfBoxes = 50 // минимальное количество ящиков провизии
+
     println("Есть повреждения корпуса (true/false):")
-    val damage= readln().toBoolean()
+    val isDamage= readln().toBoolean()
     println("Введите численность экипажа:")
     val numberOfCrew = readln().toInt()
     println("Введите количество ящиков:")
     val numberOfBoxes = readln().toInt()
     println("Благоприятная погода (true/false):")
-    val goodWeather = readln().toBoolean()
+    val isGoodWeather = readln().toBoolean()
 
-    val condition = (!damage && (numberOfCrew in 55 until 70) && (numberOfBoxes > 50)) ||
-            (goodWeather && (numberOfCrew == 70) && (numberOfBoxes > 50))
+    val condition = (!isDamage && (numberOfCrew in minNumberOfCrew until maxNumberOfCrew)
+            && (numberOfBoxes > minNumberOfBoxes))
+            || (isGoodWeather && (numberOfCrew == maxNumberOfCrew)
+            && (numberOfBoxes > minNumberOfBoxes))
 
     println("Можно отправляться: $condition")
 }
