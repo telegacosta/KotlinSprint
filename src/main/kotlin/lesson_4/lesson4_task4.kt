@@ -9,12 +9,12 @@ fun main() {
     val backExercise = "Упражнения для спины"
     val absExercise = "Упражнения для пресса"
 
-    val IsTrainingToday = day % 2 == 1
+    val isTrainingToday = day % 2 == 1
 
     println("""
-        $armExercise: $IsTrainingToday
-        $legExercise: ${!IsTrainingToday}
-        $backExercise: ${!IsTrainingToday}
-        $absExercise: $IsTrainingToday
+        $armExercise: $isTrainingToday
+        $legExercise: ${!isTrainingToday}
+        $backExercise: ${!isTrainingToday}
+        $absExercise: $isTrainingToday
     """.trimIndent())
 }
