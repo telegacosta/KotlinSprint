@@ -1,13 +1,13 @@
-package lesson4
+package lesson_4
 
 fun main() {
 
-    val IsWeatherGood = true
+    val isWeatherGood = true
     val isTentOpen = true
     val humidity = 20
     val isNotWinterSeason  = false
 
     println("Благоприятные ли условия сейчас для роста бобовых? ${
-        IsWeatherGood && isTentOpen && (humidity == 20) && isNotWinterSeason
+        isWeatherGood && isTentOpen && (humidity == 20) && isNotWinterSeason
     }")
 }
