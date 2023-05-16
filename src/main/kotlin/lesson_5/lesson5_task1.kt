@@ -11,9 +11,9 @@ fun main() {
     println("Введите сумму чисел №1 и №2:")
     val sum = readln().toInt()
 
-    val rightSum = number1 + number2
+    val isSumRight = sum == number1 + number2
 
-    if (sum == rightSum)
+    if (isSumRight)
         println("Добро пожаловать!")
     else
         println("Доступ запрещен.")
