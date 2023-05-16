@@ -11,10 +11,11 @@ fun main() {
     println("Благоприятная погода (true/false):")
     val isGoodWeather = readln().toBoolean()
 
-    val condition = (!isDamage && (numberOfCrew in MIN_NUMBER_OF_CREW until MAX_NUMBER_OF_CREW)
-            && (numberOfBoxes > MIN_NUMBER_OF_BOXES))
-            || (isGoodWeather && (numberOfCrew == MAX_NUMBER_OF_CREW)
-            && (numberOfBoxes > MIN_NUMBER_OF_BOXES))
+    val condition = (!isDamage &&
+            (numberOfCrew in MIN_NUMBER_OF_CREW until MAX_NUMBER_OF_CREW) &&
+            (numberOfBoxes > MIN_NUMBER_OF_BOXES)) ||
+            (isGoodWeather && (numberOfCrew == MAX_NUMBER_OF_CREW) &&
+            (numberOfBoxes > MIN_NUMBER_OF_BOXES))
 
     println("Можно отправляться: $condition")
 }
