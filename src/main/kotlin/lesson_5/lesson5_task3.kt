@@ -2,8 +2,8 @@ package lesson_5
 
 fun main() {
 
-    val rightNumber1 = 12
-    val rightNumber2 = 39
+    val number1 = 12
+    val number2 = 39
 
     println("Введите первое число:")
     val enteredNumber1 = readln().toInt()
@@ -11,8 +11,9 @@ fun main() {
     println("Введите второе число:")
     val enteredNumber2 = readln().toInt()
 
-    val isNumber1Guessed = enteredNumber1 == rightNumber1
-    val isNumber2Guessed = enteredNumber2 == rightNumber2
+    val isNumber1Guessed = (enteredNumber1 == number1) || (enteredNumber2 == number1)
+    val isNumber2Guessed = ((enteredNumber1 == number2) || (enteredNumber2 == number2))
+            && (enteredNumber1 != enteredNumber2)
 
     if (isNumber1Guessed && isNumber2Guessed)
         println("Поздравляем! Вы выиграли главный приз!")
