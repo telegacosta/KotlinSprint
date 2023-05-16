@@ -2,11 +2,11 @@ package lesson_5
 
 fun main() {
 
-    println("Введите число №1:")
-    val number1 = readln().toInt()
+    val number1 = (1..100).random()
+        println("Число №1: $number1")
 
-    println("Введите число №2:")
-    val number2 = readln().toInt()
+    val number2 = (1..100).random()
+        println("Число №2: $number2")
 
     println("Введите сумму чисел №1 и №2:")
     val sum = readln().toInt()
